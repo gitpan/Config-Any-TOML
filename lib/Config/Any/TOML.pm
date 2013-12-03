@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package Config::Any::TOML;
 
-our $VERSION = '0.001'; # VERSION
+our $VERSION = '0.002'; # VERSION
 
 # ABSTRACT: Load TOML config files
 
@@ -33,7 +33,7 @@ sub load {
 }
 
 
-sub requires_one_of { 'TOML' }
+sub requires_any_of { 'TOML' }
 
 
 1;
@@ -50,7 +50,7 @@ Config::Any::TOML - Load TOML config files
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 DESCRIPTION
 
@@ -58,15 +58,15 @@ Loads TOML files. See L<https://github.com/mojombo/toml>
 
 =head1 METHODS
 
-=head2 extensions( )
+=head2 extensions()
 
-return an array of valid extensions (C<ini>).
+return an array of valid extensions (C<toml>).
 
 =head2 load( $file )
 
 Attempts to load C<$file> as an TOML file.
 
-=head2 requires_one_of( )
+=head2 requires_any_of()
 
 Specifies that this module requires one of the following TOML modules in order
 to work.

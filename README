@@ -2,19 +2,19 @@ NAME
     Config::Any::TOML - Load TOML config files
 
 VERSION
-    version 0.001
+    version 0.002
 
 DESCRIPTION
     Loads TOML files. See <https://github.com/mojombo/toml>
 
 METHODS
-  extensions( )
-    return an array of valid extensions ("ini").
+  extensions()
+    return an array of valid extensions ("toml").
 
   load( $file )
     Attempts to load $file as an TOML file.
 
-  requires_one_of( )
+  requires_any_of()
     Specifies that this module requires one of the following TOML modules in
     order to work.
 

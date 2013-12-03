@@ -29,7 +29,7 @@ no_index:
 provides:
   Config::Any::TOML:
     file: lib/Config/Any/TOML.pm
-    version: 0.001
+    version: 0.002
 requires:
   Config::Any::Base: 0
   TOML: 0
@@ -41,4 +41,4 @@ resources:
   bugtracker: https://github.com/mjemmeson/config-any-toml/issues
   homepage: https://metacpan.org/release/Config-Any-TOML
   repository: git://github.com/mjemmeson/config-any-toml.git
-version: 0.001
+version: 0.002
